@@ -29,7 +29,6 @@ const Home = () => {
     setError(null);
     try {
       const data: ApiResponse = await searchMovies(query);
-  
       if (data.Response === "True") {
         setResults(data.Search || []);
       } else {
